@@ -53,6 +53,49 @@ A cheap report that creates 2,000 tokens of review debt is more expensive than a
 - Sandbox vaults: pressure-test ideas; explicit promotion is required.
 - Agents/workers: execute and review; they do not self-certify final truth.
 
+
+
+## Install the skills into Hermes
+
+This repository keeps skills in plain Hermes-style `SKILL.md` folders. A friend can use them in three ways:
+
+### Option A — inspect/use as references
+
+```bash
+git clone https://github.com/<owner>/agent-intelligence-economy.git
+cd agent-intelligence-economy
+```
+
+Read `docs/`, copy `starter-vault/`, and paste/adapt templates as needed.
+
+### Option B — copy selected skills into a Hermes profile
+
+```bash
+PASTE HERE: HERMES_HOME_PATH
+# Example: export HERMES_HOME=~/.hermes
+mkdir -p "$HERMES_HOME/skills/agent-intelligence-economy"
+cp -R skills/* "$HERMES_HOME/skills/agent-intelligence-economy/"
+hermes skills list | grep -i intelligence || true
+```
+
+### Option C — install individual skill directories manually
+
+Copy one folder from `skills/<name>/` into your Hermes skills directory, then start a fresh Hermes session and ask it to load that skill.
+
+## Minimum viable workflow
+
+1. Put source material in `starter-vault/Clippings/`.
+2. Run `python3 scripts/clipping_batch_sweep.py ...`.
+3. Review the report and classify each item.
+4. Patch or create only reusable skills/runbooks.
+5. Log rejected edits and already-absorbed items.
+6. Score recurring loops weekly.
+7. Promote only claims that survive objection/falsifier gates.
+
+## Public launch note
+
+This is an engine kit, not a private brain dump. It intentionally avoids personal project data, private financial details, raw chats, secrets, and local machine paths.
+
 ## Safety and privacy
 
 This repo is sanitized. It does not include private vault contents, credentials, live trading logic, personal finance data, raw chats, or private project specifics. Treat market/trading examples as paper/research-only calibration patterns unless separately authorized with real risk controls.
