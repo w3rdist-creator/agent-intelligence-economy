@@ -1,0 +1,10 @@
+{
+  "task_id": "",
+  "status": "complete|partial|failed",
+  "artifacts": [],
+  "evidence_handles": [],
+  "verification": [],
+  "needs_frontier": false,
+  "summary": "",
+  "blockers": []
+}

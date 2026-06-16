@@ -1,0 +1,13 @@
+{
+  "task_id": "",
+  "objective": "",
+  "context_paths": [],
+  "allowed_actions": [],
+  "forbidden_actions": [],
+  "constraints": {},
+  "acceptance_criteria": [],
+  "stop_conditions": [],
+  "expected_artifact": "",
+  "result_schema": "templates/result-packet.json",
+  "verification_checklist": []
+}
